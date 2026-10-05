@@ -1,0 +1,188 @@
+/* GENERAL PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7f0ff, #e8f4ff);
+    color: #333;
+    transition: background 0.6s ease, color 0.6s ease;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* MAIN */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CARDS */
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+/* BUTTONS */
+
+button {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    background: #7b4bb7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #5f3594;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* CLOCK */
+
+#clock {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* MOUSE AREA */
+
+.mouse-card {
+    min-height: 280px;
+}
+
+#mouseMessage {
+    font-size: 20px;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: #9b6dcc;
+    border-radius: 50%;
+    margin: 30px auto;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#circle:hover {
+    transform: scale(1.3);
+}
+
+/* KEYBOARD */
+
+#keyboardMessage {
+    margin-top: 20px;
+    padding: 20px;
+    background: #eee5f8;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+/* BROWSER INFO */
+
+#browserInfo {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+/* DARK MOOD */
+
+body.dark {
+    background: linear-gradient(135deg, #171321, #25203a);
+    color: white;
+}
+
+body.dark .card {
+    background: rgba(40, 35, 55, 0.95);
+}
+
+body.dark #keyboardMessage {
+    background: #342c48;
+}
+
+body.dark button {
+    background: #a87bdd;
+}
+
+/* SUNSET MOOD */
+
+body.sunset {
+    background: linear-gradient(135deg, #ffb88c, #de6262);
+    color: white;
+}
+
+body.sunset .card {
+    background: rgba(255, 255, 255, 0.88);
+    color: #333;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    #clock {
+        font-size: 28px;
+    }
+}

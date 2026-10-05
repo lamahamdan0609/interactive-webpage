@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Mood Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">✨ Interactive Mood Space ✨</h1>
+        <p id="subtitle">Use your mouse, keyboard, and the buttons to interact with the page.</p>
+    </header>
+
+    <main>
+
+        <!-- CLOCK -->
+        <section class="card">
+            <h2>🕒 Current Time</h2>
+            <p id="clock">Loading time...</p>
+            <p id="timeMessage">Welcome!</p>
+        </section>
+
+        <!-- MOOD CHANGER -->
+        <section class="card">
+            <h2>🎨 Change the Mood</h2>
+            <p>Click the button to change the appearance of the page.</p>
+
+            <button id="moodButton">Change Mood</button>
+
+            <p id="moodText">Current mood: Calm</p>
+        </section>
+
+        <!-- MOUSE INTERACTION -->
+        <section class="card mouse-card" id="mouseArea">
+            <h2>🖱️ Mouse Interaction</h2>
+            <p id="mouseMessage">
+                Move your mouse over this box!
+            </p>
+
+            <div id="circle"></div>
+        </section>
+
+        <!-- KEYBOARD INTERACTION -->
+        <section class="card">
+            <h2>⌨️ Keyboard Interaction</h2>
+            <p>Press the <strong>Spacebar</strong> to change the message.</p>
+
+            <div id="keyboardMessage">
+                Waiting for a key...
+            </div>
+        </section>
+
+        <!-- WINDOW/BOM INTERACTION -->
+        <section class="card">
+            <h2>🖥️ Browser Information</h2>
+
+            <p id="screenSize">Screen size: Loading...</p>
+            <p id="windowSize">Window size: Loading...</p>
+
+            <button id="infoButton">Show Browser Info</button>
+
+            <p id="browserInfo"></p>
+        </section>
+
+        <!-- RESET -->
+        <section class="card">
+            <button id="resetButton">Reset Page</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Interactive Webpage Lab | DOM + Events + BOM</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
